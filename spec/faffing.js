@@ -14,4 +14,4 @@ console.log(testRover)
 testCommands[0].value = 'NORMAL'
 console.log(testCommands[0].value)
 console.log(testVariables)
-//console.log((new Rover(100).recieveMessage(new Message('Status Report Please', [new Command('STATUS_CHECK')]))).results);
+//console.log((new Rover(100).recieveMessage(new Message('Status Report Please', [new Command('STATUS_CHECK')]))).results);*/
