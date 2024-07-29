@@ -1,6 +1,6 @@
 const Command = require('../command.js');
 
-// NOTE: If at any time, you want to focus on the output from a single test, feel free to comment out all the others.
+// NOTE: If at any time, you want to focus on the output from a single test, feel free to comment out all the others. 3
 //       However, do NOT edit the grading tests for any reason and make sure to un-comment out your code to get the autograder to pass.
 
 describe("Command class", function() {
@@ -9,4 +9,11 @@ describe("Command class", function() {
     expect( function() { new Command();}).toThrow(new Error('Command type required.'));
   });
 
+  it('constructor sets command type', function(){
+    expect((new Command('bees')).commandType).toBe('bees');
+  });
+
+  it('constructor sets a value passed in as the 2nd argument', function(){
+    expect((new Command('bees','dogs')).value).toBe('dogs');
+  });
 });
